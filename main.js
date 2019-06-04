@@ -1,9 +1,16 @@
+var canvassize = 500;
+var square;
+var centerw = canvassize/2;
+var centerh = canvassize/2;
+
 function setup() {
-  createCanvas(800,800);
+  createCanvas(500,500);
   background(70);
+  square = new Square();
 }
 
 function draw() {
-  ellipse(50, 50, 80, 80);
-  rect(0,0,80,80);
+
+  //ellipse(centerw, centerh, 80, 80);
+  square.show();
 }
